@@ -1,4 +1,3 @@
-
 const inquirer = require('inquirer')
 const fs = require('fs')
 
@@ -93,7 +92,7 @@ inquirer
   }) => {
     // creating the layout for the read me 
     const layOut =  ` ${title}
-    ## This application is covered under the ${license} license.
+    ## This application is covered under the ${license} license. 
     ## Current status: ${status}
     ## Description : ${description}
     ## Table of Contents : ${table}
@@ -101,7 +100,9 @@ inquirer
     ## Usage : ${usage}
     ## Contributes : ${contributes}
     ## Tests : ${test}
-    ## Questions & contact information : ${question}' GitHub username : ${githubUser} GitHub link : ${githubLink}
+    ## Questions : ${question} \n 
+    ##GitHub username : ${githubUser} \n 
+    ##GitHub link : ${githubLink} \n
     Email ${email} with additional questions.`;
     
     // calling function to create the readme
